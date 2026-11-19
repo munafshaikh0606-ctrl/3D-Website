@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Space Grotesk", sans-serif;
+  --font-sans: "Space Grotesk", "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Hide standard scrollbars to preserve the clean architectural HUD aesthetics */
+#scroll-sections-container::-webkit-scrollbar {
+  display: none;
+}
+#scroll-sections-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Elegant scrollbar styling for sidebar scroller panels */
+#project-showcase-main-scroller::-webkit-scrollbar {
+  width: 4px;
+}
+#project-showcase-main-scroller::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+#project-showcase-main-scroller::-webkit-scrollbar-thumb {
+  background: rgba(255, 59, 0, 0.2);
+  border-radius: 9999px;
+}
+#project-showcase-main-scroller::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 59, 0, 0.6);
+}
+
+/* Custom range input slider restyling for neat architect sliders */
+input[type="range"]::-webkit-slider-thumb {
+  width: 10px;
+  height: 10px;
+  background-color: #FF3B00; /* Neon red-orange accent */
+  border-radius: 50%;
+  transition: transform 0.15s ease-in-out;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+

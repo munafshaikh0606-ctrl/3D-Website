@@ -1,0 +1,6 @@
+{
+  "name": "Architectural Portfolio 3D",
+  "description": "An interactive 3D portfolio showcasing Munaf Shaikh's full-stack & AI software projects featuring parametric WebGL architectural models and structural gauges.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
